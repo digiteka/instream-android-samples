@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="582dp"
+                android:layout_height="224dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/logo" />
+
+            <Button
+                    android:id="@+id/top_left"
+                    android:layout_width="325dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginBottom="40dp"
+                    android:textColor="#1571B8"
+                    android:text="TOP - LEFT - Autoplay"
+                    android:textSize="20dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/top_right"
+                    android:layout_width="325dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginBottom="40dp"
+                    android:textColor="#1571B8"
+                    android:text="TOP - RIGHT - scroll to Play"
+                    android:textSize="20dp">
+                </Button>
+
+                <Button
+                    android:id="@+id/bottom_left"
+                    android:layout_width="325dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/custom_button"
+                    android:layout_marginBottom="90dp"
+                    android:textColor="#1571B8"
+                    android:text="BOTTOM - LEFT - click to play"
+                    android:textSize="20dp">
+                </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
