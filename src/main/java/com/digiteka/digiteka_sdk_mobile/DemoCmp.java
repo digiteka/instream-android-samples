@@ -10,7 +10,7 @@ import com.quantcast.choicemobile.model.ChoiceError;
 import com.quantcast.choicemobile.model.NonIABData;
 import com.quantcast.choicemobile.model.PingReturn;
 
-import kotlin.jvm.internal.Intrinsics;
+/*import kotlin.jvm.internal.Intrinsics;*/
 
 public class DemoCmp extends Application implements ChoiceCmpCallback {
 
@@ -55,12 +55,12 @@ public class DemoCmp extends Application implements ChoiceCmpCallback {
         Log.e("TAG ", "TCData =" + tcData.getTcString());
         setConsentString(tcData.getTcString());
 
-        if (Intrinsics.areEqual(tcData.getGdprApplies(), false) || Intrinsics.areEqual((Boolean)tcData.getVendor().getConsents().get("200"), true)) {
+        /*if (Intrinsics.areEqual(tcData.getGdprApplies(), false) || Intrinsics.areEqual((Boolean)tcData.getVendor().getConsents().get("200"), true)) {
             Log.e("TAG ", "tcData.gdprApplies == false");
-        }
-        else {
+        }*/
+        /*else {
             Log.e("TAG ", "tcData.gdprApplies == true");
-        }
+        }*/
 
     }
 

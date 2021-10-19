@@ -26,9 +26,14 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
+    /*implementation project(':playersdk')*/
     implementation 'com.google.android.exoplayer:exoplayer-core:2.11.1'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.1'
     implementation 'com.google.android.exoplayer:extension-ima:2.11.1'
@@ -38,12 +43,14 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    //implementation project(':digiteka')
-    //implementation project(':digitekaplayerweb')
-    implementation files('libs/digiteka.aar')
+    implementation project(':digitekaplayerweb')
+    //implementation files('libs/digiteka.aar')
     implementation files('libs/ChoiceMobile.aar')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    /*implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"*/
+    /*implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"*/
+
+    /*implementation 'com.github.TsiaroAndri:DigitekaSDK:1.5'*/
+    //implementation 'com.github.TsiaroAndri:TestJitpack:1.2'
 
 }
