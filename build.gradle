@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    /*implementation project(':playersdk')*/
+
     implementation 'com.google.android.exoplayer:exoplayer-core:2.11.1'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.1'
     implementation 'com.google.android.exoplayer:extension-ima:2.11.1'
@@ -46,11 +46,12 @@ dependencies {
     implementation project(':digitekaplayerweb')
     //implementation files('libs/digiteka.aar')
     implementation files('libs/ChoiceMobile.aar')
+    //implementation 'com.github.digiteka:instream-android-sdk-test:1.6'
     /*implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"*/
     /*implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"*/
 
     /*implementation 'com.github.TsiaroAndri:DigitekaSDK:1.5'*/
-    //implementation 'com.github.TsiaroAndri:TestJitpack:1.2'
+
 
 }

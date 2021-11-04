@@ -62,20 +62,18 @@ public class Demo extends AppCompatActivity /*implements DigitekaEvent*/ {
 
             Digiteka.init(containerDigiteka, //container du player
                     this,//contexte de l'application
-                    750,// Hauteur du digiteka
                     "pqvp3r", //ID de la vidéo
-                    1 , //Mode de déclenchement du Player
+                    1 , //Mode de déclenche750,ment du Player
                     "https://www.20minutes.fr/arts-stars/television/2981275-20210222-marseillais-dubai-quand-ca-allait-tapais-poing-table-previent-jessica-aidi-bookeuse", //urlreferrer
                     //"BOj8iv4Oj8iwYAHABAlxCS-AAAAnF7_______9______9uz_Ov_v_f__33e87_9v_l_7_-___u_-3zd4-_1vf99yfm1-7etr3tp_87ues2_Xur__59__3z3_9phPrsk89r633A", //Consent String
                     consentString,
                     "01132356","54",
-                    false/*,//Paramètre du SDK
-                    50,"top_left",3,5*/); //Paramètre du Visible Player
+                    true,//Paramètre du SDK
+                   50,"top_left",3,5); //Paramètre du Visible Player
         }
         else if(NB_topright!=0){
             Digiteka.init(containerDigiteka,
                     this,
-                    750,
                     "pqvp3r",
                     2 ,
                     "https://www.20minutes.fr/arts-stars/television/2981275-20210222-marseillais-dubai-quand-ca-allait-tapais-poing-table-previent-jessica-aidi-bookeuse",
@@ -88,7 +86,6 @@ public class Demo extends AppCompatActivity /*implements DigitekaEvent*/ {
         else if(NB_bottomleft!=0){
             Digiteka.init(containerDigiteka,
                     this,
-                    750,
                     "pqvp3r",
                     0 ,
                     "https://www.20minutes.fr/arts-stars/television/2981275-20210222-marseillais-dubai-quand-ca-allait-tapais-poing-table-previent-jessica-aidi-bookeuse",
